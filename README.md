@@ -56,6 +56,21 @@ pip install -r requirements.txt
 
 ### Finding screen coordinates
 
+**With Paint (easiest):**
+
+1. Open the book on the page you want, then press **Print Screen** to copy a screenshot of the
+   whole screen.
+2. Open **Paint** and press **Ctrl + V** to paste it.
+3. Move the mouse over the spot you need (a corner of the page, the next button). Paint shows
+   its coordinates at the bottom left of the window, as `x, y px`.
+4. Write those numbers down and enter them as `x, y` in the program.
+
+Paste the screenshot without moving it, so its top left corner stays at `0, 0`. Zooming in is
+fine, Paint still shows real screen coordinates. If you have more than one monitor, keep the
+book on the main one.
+
+**With Python:**
+
 Run this, then move your mouse to the spot you want within 3 seconds:
 
 ```bash
